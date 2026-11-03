@@ -1,0 +1,4 @@
+build/
+.dart_tool/
+# The example carries a path dependency on this package, so it cannot ship.
+example/

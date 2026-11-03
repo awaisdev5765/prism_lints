@@ -1,0 +1,15 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    todo: ignore
+  exclude:
+    # The example is a fixture that deliberately violates every rule, so it must
+    # not be analysed here: `dart analyze` would report the violations this
+    # package exists to produce. It is checked by running custom_lint instead,
+    # which is the only thing that executes the rules anyway.
+    - example/**

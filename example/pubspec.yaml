@@ -1,0 +1,20 @@
+name: prism_lints_example
+description: >-
+  A fixture that shows each rule firing, and proves they stay quiet on values
+  that have no token equivalent. Run `dart run custom_lint` here to see the
+  output.
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  prism_kit: ^1.4.1
+
+dev_dependencies:
+  custom_lint: ^0.8.0
+  prism_lints:
+    path: ../
